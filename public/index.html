@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Cricket broadcast (hop 2)</title>
+    <style>
+      body { font-family: sans-serif; margin: 2rem; }
+      #animation { font-size: 2rem; min-height: 3rem; }
+      .wicket { color: #b00020; }
+      .appeal-not-out { color: #666; }
+      .boundary-four, .boundary-six { color: #0b6; }
+    </style>
+  </head>
+  <body>
+    <h1>Live score</h1>
+    <p>Consumes <code>cricket-scoring</code> only. Two hops from <code>cricket-protocol</code>.</p>
+    <div>Score: <span id="score">–</span></div>
+    <div id="animation"></div>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
